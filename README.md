@@ -30,7 +30,8 @@
         catch (InterruptedException | ExecutionException e) {
             throw new RuntimeException(e);
         }
-    }```
+    }
+```
 
 ### Решение второй задачи в классе Ex2    
 ```java
