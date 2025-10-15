@@ -1,5 +1,5 @@
 ###Решение первой задачи в классе Ex1, два варианта
-`
+```
     //1 вариант
     public static ProfileInfo getProfileInfo(Long id) {
         FutureTask<CompanyInfo> futureTask = new FutureTask<>(
@@ -30,10 +30,10 @@
         catch (InterruptedException | ExecutionException e) {
             throw new RuntimeException(e);
         }
-    }`
+    }```
 
 ###Решение второй задачи в классе Ex2    
-`    
+```    
     public static Map<Long, Map<Long, List<Profile>>> groupByOrgIdAndGroupId(List<Profile> data) {
         return data.stream()
                 .collect(Collectors.groupingBy(
@@ -43,4 +43,4 @@
                         )
                 ));
     }
-`
+```
